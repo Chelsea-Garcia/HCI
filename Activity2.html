@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgb(247, 230, 234);
+    }
+    p {
+      color: purple;
+      font-size: 20px;
+    }
+    button {
+      padding: 4px 4px;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p id="bloom">My cat's name is Bloom.</p>
+    <button type="button" onclick="colorchange()">Change text color</button>
+  </div>
+<script>
+function colorchange() {
+  var x = document.getElementById("bloom");
+  if (x.style.color === "rgb(174, 132, 224)") {
+    x.style.color = "purple";
+  } else {
+    x.style.color = "rgb(174, 132, 224)";
+  }
+}
+</script>
+</body>
+</html>

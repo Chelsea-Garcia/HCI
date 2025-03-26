@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body, html {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      p {
+        font-size: 20px;
+      }
+      button {
+        padding: 4px 4px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+<body>
+  <div>
+    <p id="meow">Hello! What's your name?</p>
+    <button type="button" onclick="changetext()">Change text</button>
+  </div>
+  <script>
+  function changetext() {
+    var x = document.getElementById("meow");
+    if (x.innerHTML == "Hello! What's your name?") {
+      x.innerHTML = "Hi! I'm Chelsea.";
+    } else {
+      x.innerHTML = "Hello! What's your name?";
+    }
+  }
+  </script>
+</body>
+</html>
+
